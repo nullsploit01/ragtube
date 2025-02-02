@@ -6,8 +6,8 @@ from rag import generate_ai_answer
 if __name__ == "__main__":
     initialize_db()
 
-    video_url = "https://www.youtube.com/watch?v=1K5oDtVAYzk"
-    title = "The Hidden Pattern in Post Codes"
+    video_url = "https://www.youtube.com/watch?v=a6ARiA_7BCg"
+    title = "Understanding Postal Codes"
 
     video_id, transcript = get_youtube_transcript(video_url)
     if transcript:
