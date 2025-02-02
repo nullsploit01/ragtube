@@ -1,0 +1,5 @@
+openai             
+psycopg2 
+youtube-transcript-api  
+requests          
+jsonschema       
