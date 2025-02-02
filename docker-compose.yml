@@ -1,0 +1,16 @@
+services:
+  neon-db:
+    build: .
+    container_name: neon-db
+    restart: always
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: secret
+      POSTGRES_DB: research_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - neon_data:/var/lib/postgresql/data
+
+volumes:
+  neon_data:
